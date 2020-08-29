@@ -1,0 +1,14 @@
+@import "./colors.scss";
+
+$theme-colors: (
+  "primary": $blue,
+  "secondary": $dark-blue,
+  "muted": $light-gray,
+);
+
+@import "node_modules/bootstrap/scss/bootstrap";
+
+
+.text-muted {
+  color: $light-gray !important;
+}
