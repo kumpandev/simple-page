@@ -1,6 +1,11 @@
 .nav-item {
   font-size: 22px;
-  .svg {
+  svg {
     fill: $light-gray;
+    path {
+      fill: $light-gray;
+    }
+    width: 35px;
+    height: 35px;
   }
 }

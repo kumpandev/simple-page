@@ -1,29 +1,36 @@
 import { DASHBOARD } from '../../routes';
+import { 
+  DashboardIcon, 
+  SearchIcon, 
+  ProfileIcon,
+  SettingsIcon,
+  NotificationIcon
+} from '../../components/icons';
 
 export default [
   {
     title: 'Dashboard',
     link: DASHBOARD.ROOT,
-    icon: null
+    icon: DashboardIcon
   },
   {
     title: 'Search Test',
     link: '',
-    icon: null
+    icon: SearchIcon
   },
   {
     title: 'Profile',
     link: '',
-    icon: null
+    icon: ProfileIcon
   },
   {
     title: 'Settings',
     link: '',
-    icon: null
+    icon: SettingsIcon
   },
   {
     title: 'Notifications',
     link: '',
-    icon: null
+    icon: NotificationIcon
   }
 ]
