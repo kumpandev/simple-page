@@ -7,7 +7,7 @@ import Header from './components/header'
 
 const App = (props) => {
   return (
-    <div className="container-fluid px-0 mx-0 h-100">
+    <div className="container-fluid px-0 mx-0 h-100 bg-light ">
       <div className="d-flex h-100">
         <div className="col-2 px-0 h-100">
           <SideMenu />

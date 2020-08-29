@@ -4,11 +4,17 @@ $theme-colors: (
   "primary": $blue,
   "secondary": $dark-blue,
   "muted": $light-gray,
+  "gray": $gray,
+  "light": $light,
+  "white": $white,
 );
 
 @import "node_modules/bootstrap/scss/bootstrap";
 
-
 .text-muted {
   color: $light-gray !important;
+}
+
+.font-weight-middle {
+  font-weight: 600;
 }
