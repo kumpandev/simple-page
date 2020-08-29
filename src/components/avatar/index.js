@@ -3,17 +3,19 @@ import classnames from "classnames";
 import { AVATAR_SIZES, AVATAR_SIZE_MAP } from "../../helpers/constants";
 
 export default (props) => {
-  const { className, link, withIcon, size } = props;
+  const { className, link, icon, size } = props;
 
   let content = <div />;
 
   if (link) {
     content = <img src={link} alt="avatar" />;
-  } else if (withIcon) {
-    content = "ICON";
+  } else if (icon) {
+    const TagName = icon;
+    content = <TagName className="profile"/>;
   }
 
   const classes = classnames(
+    "avatar",
     "rounded-circle",
     "bg-muted",
     className,

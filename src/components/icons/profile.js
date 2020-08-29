@@ -1,8 +1,8 @@
 import React from 'react';
 
-export default ({ className }) => (
+export default props => (
   <svg 
-    className={className} 
+    {...props}
     version="1.1" 
     x="0px" 
     y="0px" 

@@ -19,7 +19,7 @@ const SideMenu = (props) => {
           {NAVIGATION_LINKS.map(({ title, link, icon }, idx) => {
             const TagName = icon;
             return (
-              <Link to={link} className="d-flex text-muted nav-item pb-2">
+              <Link key={idx} to={link} className="d-flex text-muted nav-item pb-2">
                 {TagName ? <TagName className="mr-2" /> : null}
                 <div>{title}</div>
               </Link>

@@ -3,6 +3,7 @@ import { Route, Switch, Redirect } from "react-router-dom";
 import { Dashboard } from "./pages";
 import { DASHBOARD } from "./routes";
 import SideMenu from "./components/sideMenu";
+import Header from './components/header'
 
 const App = (props) => {
   return (
@@ -12,6 +13,7 @@ const App = (props) => {
           <SideMenu />
         </div>
         <div className="d-flex flex-column col-10 px-0">
+          <Header />
           <Switch>
             <Route path={DASHBOARD.ROOT} component={Dashboard} />
             <Redirect to={DASHBOARD.ROOT} />
