@@ -1,0 +1,79 @@
+.main-container {
+    width: 300px;
+    height: 160px;
+    border: solid 1.5px;
+    border-radius: 10px;
+    color: $titleGray;
+    font-size: 15px;
+    box-sizing: border-box;
+    padding: 10px 5px;
+}
+
+.add-button-container {
+    width: 300px;
+    height: 160px;
+}
+
+.add-button {
+    border: solid 1.5px $titleGray
+}
+
+.border-tests-completed {
+    border-color: green;
+}
+
+.LTDate {
+    padding: 10px 20px 0;
+}
+
+.border-tests {
+    border-color: #f0a65d;
+}
+
+.title-gray { 
+    color: $titleGray
+  }
+
+.single-chart {
+    width: 50px;
+  }
+  
+  .circular-chart {
+    display: block;
+    max-width: 50px;
+    max-height: 250px;
+  }
+  
+  .circle-bg {
+    fill: none;
+    stroke: #eee;
+    stroke-width: 3.8;
+  }
+  
+  .circle {
+    fill: none;
+    stroke-width: 2.8;
+    stroke-linecap: round;
+    animation: progress 1s ease-out forwards;
+  }
+  
+  @keyframes progress {
+    0% {
+      stroke-dasharray: 0 100;
+    }
+  }
+  
+  .circular-chart.completed .circle {
+    stroke: green;
+  }
+
+  .circular-chart.uncompleted .circle {
+    stroke: #f0a65d;
+  }
+  
+  .percentage {
+    fill: #666;
+    font-family: sans-serif;
+    font-size: 9.5px;
+    text-anchor: middle;
+  }
