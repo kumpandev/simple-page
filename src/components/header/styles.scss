@@ -34,3 +34,9 @@ input.search:focus {
     border-radius: 50%;
   }
 }
+
+.menu-icon {
+  @include media-breakpoint-up(xl) {
+    display: none;
+  }
+}

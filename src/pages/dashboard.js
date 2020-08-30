@@ -53,12 +53,12 @@ const Dashboard = props => {
 
   return( 
     <div>
-      <div className="d-flex p-3 font-weight-middle text-gray justify-content-between">
+      <div className="d-flex flex-column flex-md-row p-3 font-weight-middle text-gray justify-content-between">
         <div className="d-flex align-items-center">
           <HomeIcon className="icon-md mr-3"/>
           <h5 className="lineheight-md m-0">Dashboard</h5>
         </div>
-        <div className="d-flex flex-column align-items-center">
+        <div className="d-flex flex-column align-items-md-center mt-4 mt-md-0">
           <span>Principal Loae Yurns Maike</span>
           <span>UIP YU. Ben James</span>
         </div>
@@ -68,6 +68,10 @@ const Dashboard = props => {
           In Progress
         </div>
         <div className='d-flex flex-wrap mt-4'>
+          {getDataByStatus(false)}
+          {getDataByStatus(false)}
+          {getDataByStatus(false)}
+          {getDataByStatus(false)}
           {getDataByStatus(false)}
         </div>
       </div>

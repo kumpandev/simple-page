@@ -16,7 +16,7 @@ const Examiner = ({data, className}) => {
   const classes = classnames(className, `d-flex flex-column justify-content-between border-tests${isCompleted ? '-completed' : ''} main-container`)
 
   return (
-    <div className='pr-4 mb-3'>
+    <div className='col-lg-4 col-md-6 mb-3'>
       <div className={classes}>
         <div className='font-weight-bold'>
           {`Priniciap Examiner (${examiner})`}

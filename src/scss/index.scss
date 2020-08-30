@@ -41,3 +41,34 @@ body,
 
 @import "./bootstrap-override.scss";
 @import "./components.scss";
+
+$side-menu-width: 250px;
+
+.side-menu-container {
+  min-width: $side-menu-width;
+  left: 0;
+  transition: left 1s;
+  @include media-breakpoint-down(lg) {
+    position: absolute;
+    left: -$side-menu-width;
+    z-index: 9999;
+  }
+}
+
+.side-menu-container.open {
+  @include media-breakpoint-down(lg) {
+    left: 0 !important;
+  }
+}
+.cover {
+  @include media-breakpoint-down(lg) {
+    position: absolute;
+    left: 0;
+    right: -10px;
+    top: 0;
+    bottom: 0;
+    z-index: 9998;
+    background-color: $gray;
+    opacity: 0.3;
+  }
+}

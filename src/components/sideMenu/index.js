@@ -4,7 +4,7 @@ import Avatar from "../avatar";
 import { AVATAR_SIZE_MAP, NAVIGATION_LINKS } from "../../helpers/constants";
 
 const SideMenu = (props) => {
-  const { companyName } = props;
+  const { companyName, closeMenu } = props;
 
   return (
     <div className="d-flex flex-column bg-primary h-100 justify-content-between">
@@ -19,7 +19,12 @@ const SideMenu = (props) => {
           {NAVIGATION_LINKS.map(({ title, link, icon }, idx) => {
             const TagName = icon;
             return (
-              <Link key={idx} to={link} className="d-flex text-muted nav-item pb-2">
+              <Link 
+                key={idx} 
+                to={link} 
+                className="d-flex text-muted nav-item pb-2"
+                onClick={closeMenu}
+              >
                 {TagName ? <TagName className="mr-2" /> : null}
                 <div>{title}</div>
               </Link>
