@@ -13,6 +13,13 @@ const testData = [
   },
   {
     isCompleted: false, 
+    completedTests: 22, 
+    remainingTests: 58, 
+    LTDate: '08/05/2020', 
+    examiner: 'FFFFF',
+  },
+  {
+    isCompleted: false, 
     completedTests: 56, 
     remainingTests: 132, 
     LTDate: '18/07/2020', 
@@ -45,7 +52,7 @@ const Dashboard = props => {
  
 
   return( 
-    <div className="">
+    <div>
       <div className="d-flex p-3 font-weight-middle text-gray justify-content-between">
         <div className="d-flex align-items-center">
           <HomeIcon className="icon-md mr-3"/>
@@ -68,7 +75,7 @@ const Dashboard = props => {
         <div className="h4 title-gray">
           Completed
         </div>
-        <div className='d-flex justify-content-between flex-wrap mt-4'>
+        <div className='d-flex flex-wrap mt-4'>
           {getDataByStatus(true)}
           <AddButton />
         </div>

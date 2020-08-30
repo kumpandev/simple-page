@@ -4,7 +4,7 @@ import UserProfile from '../userProfile'
 import { NotificationIcon, SettingsIcon } from '../icons'
 
 const Header = props => {
-  return <div className="d-flex header-block border-bottom align-items-center px-4 bg-white">
+  return <div className="d-flex header-block border-bottom align-items-center p-4 bg-white">
     <div className="col-5 px-0">
       <Search /> 
     </div> 

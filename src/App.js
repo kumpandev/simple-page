@@ -14,10 +14,12 @@ const App = (props) => {
         </div>
         <div className="d-flex flex-column col-10 px-0">
           <Header />
-          <Switch>
-            <Route path={DASHBOARD.ROOT} component={Dashboard} />
-            <Redirect to={DASHBOARD.ROOT} />
-          </Switch>
+          <div className="overflow-auto">
+            <Switch>
+              <Route path={DASHBOARD.ROOT} component={Dashboard} />
+              <Redirect to={DASHBOARD.ROOT} />
+            </Switch>
+          </div>
         </div>
       </div>
     </div>
